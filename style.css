@@ -1,0 +1,88 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  background: #264653;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.calculator{
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  background: #2a9d8f;
+  border-radius: 5px;
+}
+
+.value__block{
+  height: 200px;
+  text-align: right;
+}
+
+.accumulator{
+  height: 75px;
+  padding: 5%;
+  font-size: 40px;
+  line-height: 75px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.current-operation{
+  height: 35px;
+  line-height: 35px;
+  font-size: 35px;
+}
+
+.current-value{
+  height: 90px;
+  padding: 2%;
+  font-size: 60px;
+  line-height: 90px;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.btn__block{
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2px;
+  padding: 4px;
+}
+
+.btn__block button{
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+}
+
+.null{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.operation, .eq{
+  background: #e76f51;
+}
+
+.btn, .del, .persant.operation, .minus{
+  background: #e9c46a;
+}
+
+.btn:hover, .minus:hover, .del:hover{
+  background: #e9bd4f;
+}
+
+.operation:hover, .eq:hover{
+  background: #e75b38;
+}
